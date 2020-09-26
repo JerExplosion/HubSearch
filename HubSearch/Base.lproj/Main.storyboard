@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="One-BX-xpb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SearchG Hub View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SearchGHubViewController" customModule="HubSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search Github Users" translatesAutoresizingMaskIntoConstraints="NO" id="BXW-CY-vsz">
+                                <rect key="frame" x="0.0" y="143" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4f6-WW-auz"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k3-fB-hUl">
+                                <rect key="frame" x="20" y="104" width="113.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search it up" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-k4-JzM">
+                                <rect key="frame" x="105.5" y="700" width="203" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="xN3-Ko-m9h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="narutoRun" translatesAutoresizingMaskIntoConstraints="NO" id="T62-Hg-piv" customClass="RoImageView" customModule="HubSearch" customModuleProvider="target">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="374" id="Agj-90-KIa"/>
+                                    <constraint firstAttribute="width" constant="374" id="ir6-s0-gRR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
+                                        <real key="value" value="187"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kcp-P4-fWs">
+                                <rect key="frame" x="20" y="214.5" width="374" height="565.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gHubUserCell" rowHeight="57" id="u9Q-hf-hIU" customClass="GHubUserTableCell" customModule="HubSearch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u9Q-hf-hIU" id="UJQ-6m-gzE">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="narutoRun" translatesAutoresizingMaskIntoConstraints="NO" id="etC-av-r8F" customClass="RoImageView" customModule="HubSearch" customModuleProvider="target">
+                                                    <rect key="frame" x="13" y="8" width="36" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JaneDoe7667" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAt-Yc-EJ2">
+                                                    <rect key="frame" x="71" y="8" width="266" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="gHubUserProfilePic" destination="etC-av-r8F" id="GF2-4h-FgH"/>
+                                            <outlet property="gHubUsernameLabel" destination="gAt-Yc-EJ2" id="Owb-wI-x9w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kcp-P4-fWs" secondAttribute="trailing" constant="20" id="0lN-eA-VHI"/>
+                            <constraint firstItem="kcp-P4-fWs" firstAttribute="top" secondItem="BXW-CY-vsz" secondAttribute="bottom" constant="16" id="KwE-Fo-eAz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kcp-P4-fWs" secondAttribute="bottom" constant="82" id="LOq-TN-kWN"/>
+                            <constraint firstItem="hgd-k4-JzM" firstAttribute="top" secondItem="T62-Hg-piv" secondAttribute="bottom" constant="65" id="PCS-04-hcb"/>
+                            <constraint firstItem="6k3-fB-hUl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="UAr-Zl-0k2"/>
+                            <constraint firstItem="T62-Hg-piv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zbe-7X-Pk0"/>
+                            <constraint firstItem="BXW-CY-vsz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ajq-vr-hHe"/>
+                            <constraint firstItem="BXW-CY-vsz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="amv-ji-FYZ"/>
+                            <constraint firstItem="BXW-CY-vsz" firstAttribute="top" secondItem="6k3-fB-hUl" secondAttribute="bottom" constant="10" id="g3x-RZ-Ydi"/>
+                            <constraint firstItem="kcp-P4-fWs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nGp-7l-m5v"/>
+                            <constraint firstItem="hgd-k4-JzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDp-Nu-MT5"/>
+                            <constraint firstItem="T62-Hg-piv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rWH-QH-w08"/>
+                            <constraint firstItem="6k3-fB-hUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xD5-aA-GHY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qjo-oF-Swu"/>
+                    <connections>
+                        <outlet property="gHubSearchBar" destination="BXW-CY-vsz" id="8LP-A4-hcz"/>
+                        <outlet property="gHubUsersDisplayTable" destination="kcp-P4-fWs" id="B4U-ho-jrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CxR-Mw-feE">
+            <objects>
+                <viewController id="DYZ-UW-HdV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bx4-sd-oaD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3sO-07-YtZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6L-Y4-0g9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1930" y="659"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zba-77-CzZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="One-BX-xpb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R2a-m4-SLf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xfU-Ve-pvN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvt-ry-ci5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="narutoRun" width="2560" height="1600"/>
+    </resources>
+</document>
