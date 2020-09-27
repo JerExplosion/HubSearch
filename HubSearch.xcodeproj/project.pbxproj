@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
+		8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F32521434F00808524 /* UpdatedHubModel.swift */; };
 		8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */; };
 		8FAFB5CB251D2A2E00E8A694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */; };
 		8FAFB5CD251D2A2E00E8A694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CC251D2A2E00E8A694 /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
+		8F46A4F32521434F00808524 /* UpdatedHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedHubModel.swift; sourceTree = "<group>"; };
 		8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarSettings.swift; sourceTree = "<group>"; };
 		8FAFB5C7251D2A2E00E8A694 /* HubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				8FAFB5E6251D2C4F00E8A694 /* GloballyApplied.swift */,
 				8F1DE74A251D4084002CDA60 /* HubModel.swift */,
+				8F46A4F32521434F00808524 /* UpdatedHubModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				8FAFB5DF251D2B5E00E8A694 /* SearchGHubViewController.swift in Sources */,
 				8FAFB5E7251D2C4F00E8A694 /* GloballyApplied.swift in Sources */,
 				8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */,
+				8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */,
 				8FAFB5F1251D31E600E8A694 /* IBDesignInspect.swift in Sources */,
 				8FAFB5ED251D302000E8A694 /* GHubUsersDisplayTableExtension.swift in Sources */,
 				8FAFB5F8251D35BB00E8A694 /* APIDealer.swift in Sources */,

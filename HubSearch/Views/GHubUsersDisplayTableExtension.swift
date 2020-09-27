@@ -14,18 +14,21 @@ extension SearchGHubViewController: TableViewDelegateDatasourceCombined {
         guard let numOfR = ghbViewModel.gettingNumOfRs() else { return 000003}
         return numOfR
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cello = gHubUsersDisplayTable.dequeueReusableCell(withIdentifier: GloballyApplied.gHubUserCellID, for: indexPath) as! GHubUserTableCell
-
-        ghbViewModel.filteredHubModel = ghbViewModel.gettingHubObject()
         
-        let desiredHubEntry = ghbViewModel.gettingHubEntries(index: indexPath.row)
+        if let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) {
+            print("Inside cellForRow, avatarURL is: ", avatarURL)
+            cello.gHubUserProfilePic.imageryPull(picURL: avatarURL)
+        }  
+        //    ghbViewModel.filteredHubModel = ghbViewModel.gettingHubObject()
+        //     let desiredHubEntry = ghbViewModel.gettingHubEntries(index: indexPath.row)
         
-        print(desiredHubEntry?.API)
-   //     cello.gHubUsernameLabel.text = ghbViewModel.filteredHubModel?.entries[indexPath.row].API
-        cello.gHubUsernameLabel.text = desiredHubEntry?.API
+        //    print(desiredHubEntry?.API)
+        //     cello.gHubUsernameLabel.text = ghbViewModel.filteredHubModel?.entries[indexPath.row].API
+        //     cello.gHubUsernameLabel.text = desiredHubEntry?.API
         return cello
     }
     

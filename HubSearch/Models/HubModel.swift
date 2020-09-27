@@ -17,5 +17,5 @@ struct EntryModel: Codable {
 struct HubModel: Codable {
     let entries: [EntryModel]
 }
-
+        
 
