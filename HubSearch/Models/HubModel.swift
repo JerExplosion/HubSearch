@@ -8,12 +8,14 @@
 
 import Foundation
 
-struct HubModel: Codable {
-    let entries: [EntryModel]
-}
-
 struct EntryModel: Codable {
     let API: String?
     let Description: String?
     let Link: String?
 }
+
+struct HubModel: Codable {
+    let entries: [EntryModel]
+}
+
+

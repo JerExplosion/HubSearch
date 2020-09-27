@@ -18,7 +18,6 @@ extension SearchGHubViewController: UISearchBarDelegate {
             ($0.API?.contains(searchText) ?? true)
             // || ($0.Description?.contains(searchText) ?? true)
         }
-        
         print(ghbViewModel.filteredHubEntries?.count)
         gHubUsersDisplayTable.isHidden = false
         gHubUsersDisplayTable.reloadData()

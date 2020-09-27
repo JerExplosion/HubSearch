@@ -12,11 +12,15 @@ typealias TableViewDelegateDatasourceCombined = UITableViewDelegate & UITableVie
 
 struct GloballyApplied {
     static let gHubUserCellID = "gHubUserCell"
-    static let ghubEntriesLink = "https://api.publicapis.org/entries"
+    static let ghubEntriesLink =  "https://api.github.com/search/users?q=a&page2&per_page=36"
+    // atarashi yooo
+    
+    //"https://api.publicapis.org/entries"
     static let searchBarPlaceholder = "Search Github Users"
     static let perfectoRowHeight = 57
 }
 
-let newKinURL = "https://api.github.com/search/users?q=a&page2&per_page=36"
+let oldKinURL = "https://api.publicapis.org/entries"
+// "https://api.github.com/search/users?q=a&page2&per_page=36"
 // per_page can be changed, page2 also can
       
