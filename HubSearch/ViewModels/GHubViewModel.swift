@@ -67,13 +67,17 @@ class GHubViewModel {
         return updatedHubModel?.items[index].avatarURL
     }
     
-//    func gettingNumOfRs() -> Int? {
-//        return filteredHubEntries?.count
-//    }                              //       return hubModel?.entries.count
-    
     func gettingNumOfRs() -> Int? {
         return updatedHubModel?.items.count
     }
+    
+    func gettingLoginName(index: Int) -> String? {
+        return updatedHubModel?.items[index].loginName
+    }
+       
+//    func gettingNumOfRs() -> Int? {
+//        return filteredHubEntries?.count
+//    }                              //       return hubModel?.entries.count
     
     func gettingHubObject() -> HubModel? {
         return hubModel

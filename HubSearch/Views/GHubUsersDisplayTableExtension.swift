@@ -22,7 +22,10 @@ extension SearchGHubViewController: TableViewDelegateDatasourceCombined {
         if let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) {
             print("Inside cellForRow, avatarURL is: ", avatarURL)
             cello.gHubUserProfilePic.imageryPull(picURL: avatarURL)
-        }  
+        }
+        
+        cello.gHubUsernameLabel.text = ghbViewModel.gettingLoginName(index: indexPath.row)
+        
         //    ghbViewModel.filteredHubModel = ghbViewModel.gettingHubObject()
         //     let desiredHubEntry = ghbViewModel.gettingHubEntries(index: indexPath.row)
         

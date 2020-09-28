@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
 		8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F32521434F00808524 /* UpdatedHubModel.swift */; };
+		8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */; };
+		8F46A4F82521967E00808524 /* MisNomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F72521967E00808524 /* MisNomer.swift */; };
 		8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */; };
 		8FAFB5CB251D2A2E00E8A694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */; };
 		8FAFB5CD251D2A2E00E8A694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CC251D2A2E00E8A694 /* SceneDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
 		8F46A4F32521434F00808524 /* UpdatedHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedHubModel.swift; sourceTree = "<group>"; };
+		8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHubUserDetailsViewController.swift; sourceTree = "<group>"; };
+		8F46A4F72521967E00808524 /* MisNomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisNomer.swift; sourceTree = "<group>"; };
 		8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarSettings.swift; sourceTree = "<group>"; };
 		8FAFB5C7251D2A2E00E8A694 /* HubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8FAFB5DE251D2B5E00E8A694 /* SearchGHubViewController.swift */,
+				8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				8FAFB5E8251D2D8E00E8A694 /* GHubUserTableCell.swift */,
 				8FAFB5EA251D2F8E00E8A694 /* SurprisedPikachu.gif */,
 				8FAFB5EE251D313700E8A694 /* CrossDissolution.swift */,
+				8F46A4F72521967E00808524 /* MisNomer.swift */,
 				8FAFB5F0251D31E600E8A694 /* IBDesignInspect.swift */,
 			);
 			path = Views;
@@ -218,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F46A4F82521967E00808524 /* MisNomer.swift in Sources */,
 				8FAFB5F4251D32B000E8A694 /* ImageryCacheTechnique.swift in Sources */,
 				8FAFB5EF251D313700E8A694 /* CrossDissolution.swift in Sources */,
 				8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */,
@@ -226,6 +233,7 @@
 				8FAFB5F6251D335D00E8A694 /* ImageryNormalPull.swift in Sources */,
 				8FAFB5DF251D2B5E00E8A694 /* SearchGHubViewController.swift in Sources */,
 				8FAFB5E7251D2C4F00E8A694 /* GloballyApplied.swift in Sources */,
+				8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */,
 				8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */,
 				8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */,
 				8FAFB5F1251D31E600E8A694 /* IBDesignInspect.swift in Sources */,
