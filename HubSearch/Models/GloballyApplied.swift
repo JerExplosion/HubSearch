@@ -20,6 +20,13 @@ struct GloballyApplied {
     static let perfectoRowHeight = 57
     
     static let userDetailsViewControllerStoryboardID = "GHubUserDetailsViewController"
+    
+    static var mutableAvatarURL = ""
+}
+
+class GloballyApplicableClass {
+    static var mutableAvatarURL = "https://avatars1.githubusercontent.com/u/44748278?v=4"
+ // 2nd avatarUrl in the query, just as placeholder
 }
 
 let oldKinURL = "https://api.publicapis.org/entries"

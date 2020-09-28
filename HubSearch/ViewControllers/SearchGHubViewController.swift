@@ -10,6 +10,8 @@ import UIKit
 
 class SearchGHubViewController: UIViewController, UISearchResultsUpdating {
     
+    var searchScreenDelegate: DetailsRelayProtocol?
+    
     var ghbViewModel = GHubViewModel.init()
     
     @IBOutlet weak var gHubSearchBar: UISearchBar!
@@ -62,4 +64,8 @@ extension SearchGHubViewController {
         }
         gHubUsersDisplayTable.reloadData()
     }
+}
+
+protocol DetailsRelayProtocol {
+    func loadProfileAvatar(avatarURL: String)
 }

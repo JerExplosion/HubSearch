@@ -20,7 +20,7 @@ extension SearchGHubViewController: TableViewDelegateDatasourceCombined {
         let cello = gHubUsersDisplayTable.dequeueReusableCell(withIdentifier: GloballyApplied.gHubUserCellID, for: indexPath) as! GHubUserTableCell
         
         if let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) {
-            print("Inside cellForRow, avatarURL is: ", avatarURL)
+   //         print("Inside cellForRow, avatarURL is: ", avatarURL)
             cello.gHubUserProfilePic.imageryPull(picURL: avatarURL)
         }
         
@@ -42,5 +42,13 @@ extension SearchGHubViewController: TableViewDelegateDatasourceCombined {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let sBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.userDetailsViewControllerStoryboardID)
+        
+        guard let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) else { return }  
+        searchScreenDelegate?.loadProfileAvatar(avatarURL: avatarURL)
+        
+        self.searchScreenDelegate = destination as? DetailsRelayProtocol // sus as hike
+        navigationController?.crossDissolve(destination)  
     }
 }
+// 
