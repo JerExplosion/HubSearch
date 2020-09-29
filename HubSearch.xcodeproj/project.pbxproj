@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F01A2AF2522C22F00A735CA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01A2AE2522C22F00A735CA /* UserModel.swift */; };
+		8F01A2B12522C96600A735CA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01A2B02522C96600A735CA /* UserViewModel.swift */; };
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
 		8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F32521434F00808524 /* UpdatedHubModel.swift */; };
 		8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F01A2AE2522C22F00A735CA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8F01A2B02522C96600A735CA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
 		8F46A4F32521434F00808524 /* UpdatedHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedHubModel.swift; sourceTree = "<group>"; };
 		8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHubUserDetailsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				8FAFB5E0251D2BF400E8A694 /* GHubViewModel.swift */,
+				8F01A2B02522C96600A735CA /* UserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				8FAFB5E6251D2C4F00E8A694 /* GloballyApplied.swift */,
 				8F1DE74A251D4084002CDA60 /* HubModel.swift */,
 				8F46A4F32521434F00808524 /* UpdatedHubModel.swift */,
+				8F01A2AE2522C22F00A735CA /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,9 +243,11 @@
 				8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */,
 				8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */,
 				8FAFB5F1251D31E600E8A694 /* IBDesignInspect.swift in Sources */,
+				8F01A2B12522C96600A735CA /* UserViewModel.swift in Sources */,
 				8FAFB5ED251D302000E8A694 /* GHubUsersDisplayTableExtension.swift in Sources */,
 				8FAFB5F8251D35BB00E8A694 /* APIDealer.swift in Sources */,
 				8FAFB5CD251D2A2E00E8A694 /* SceneDelegate.swift in Sources */,
+				8F01A2AF2522C22F00A735CA /* UserModel.swift in Sources */,
 				8FAFB5E9251D2D8E00E8A694 /* GHubUserTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

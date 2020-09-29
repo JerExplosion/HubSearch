@@ -21,37 +21,24 @@ class GHubViewModel {
     var hubEntries: [EntryModel]?
     var filteredHubEntries: [EntryModel]?
     
-    //
-
    // updatedModel -> updatedItems
-    
     var updatedHubModel: UpdatedHubModel?
-    
 //    var updatedHubItems: UpdatedHubItems?
 
-    //
-    
     func gettingDataForVM(stringURL: String) {
         apiDealer.pullingData(stringURL: stringURL)
         
         apiDealer.normalClosure = {
             (data, response, erro) in
             print("response's mime type is \(response?.mimeType)")
-            print("data size is \(data)")
-            
+
             guard let data = data else {
                 print(NetworkErros.dataEmpty.localizedDescription)
                 return
             }
             
             do {
-                //
                 self.updatedHubModel = try JSONDecoder().decode(UpdatedHubModel.self, from: data)
-                print("avatar url is", self.updatedHubModel?.items[0].avatarURL)
-            //    print("login name is", self.updatedHubModel?.items[2].loginName)
-            //
-          //      self.hubModel = try JSONDecoder().decode(HubModel.self, from: data)
-         //       print(self.hubModel?.entries[0])
             } catch {
                 print(erro.debugDescription)
                 print("good catch")
@@ -61,6 +48,18 @@ class GHubViewModel {
             self.closureUponCompletion?()
         }
         return
+    }
+         
+//    func gettingNumOfRs() -> Int? {
+//        return filteredHubEntries?.count
+//    }                              //       return hubModel?.entries.count
+    
+    func gettingHubObject() -> HubModel? {
+        return hubModel
+    }
+    
+    func gettingHubEntries(index: Int) -> EntryModel? {
+        return filteredHubEntries?[index]
     }
     
     func gettingAvatarURL(index: Int) -> String? {
@@ -74,16 +73,13 @@ class GHubViewModel {
     func gettingLoginName(index: Int) -> String? {
         return updatedHubModel?.items[index].loginName
     }
-       
-//    func gettingNumOfRs() -> Int? {
-//        return filteredHubEntries?.count
-//    }                              //       return hubModel?.entries.count
     
-    func gettingHubObject() -> HubModel? {
-        return hubModel
-    }
-    
-    func gettingHubEntries(index: Int) -> EntryModel? {
-        return filteredHubEntries?[index]
+    func gettingUserUrl(index: Int) -> String? {
+        return updatedHubModel?.items[index].userUrl
     }
 }
+
+// print("avatar url is", self.updatedHubModel?.items[0].avatarURL)
+//    print("login name is", self.updatedHubModel?.items[2].loginName)
+//      self.hubModel = try JSONDecoder().decode(HubModel.self, from: data)
+//       print(self.hubModel?.entries[0])

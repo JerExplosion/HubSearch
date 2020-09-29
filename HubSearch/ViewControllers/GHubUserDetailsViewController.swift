@@ -8,35 +8,59 @@
 
 import UIKit
 
-class GHubUserDetailsViewController: UIViewController, DetailsRelayProtocol {
+class GHubUserDetailsViewController: UIViewController {
 
-    @IBOutlet weak var avatarImageView: UIImageView!
+     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+
+    var userViewModel = UserViewModel.init()
     
     var searchScreenDelegate: DetailsRelayProtocol?
-    
+     var userURL: String?
+    var avatarURL: String?
+             
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBar.isHidden = true
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
-//            self.avatarImageView.imageryPull(picURL: GloballyApplicableClass.mutableAvatarURL)
-//        }
+        self.vModelConfiguration()
     }
-    
+
     func loadProfileAvatar(avatarURL: String) {
         self.avatarImageView.imageryPull(picURL: avatarURL)
-        print("details relay url is: ", avatarURL)
     }
 }
-// searchViewController.searchdelegate = self blabla
 
 extension GHubUserDetailsViewController {
+    
+    func vModelConfiguration() {
+        guard let userURL = userURL else { return }
+        userViewModel.fetchingDataIntoVM(stringURL: userURL)
+
+        guard let avatarURL = avatarURL else { return }
+        
+        DispatchQueue.main.async {
+            self.userViewModel.closureUponCompletion = {
+                self.avatarImageView.imageryPull(picURL: avatarURL)
+                self.usernameLabel.text = self.userViewModel.userModel?.name
+            }
+        }
+    }
+}
+
+
+// extension GHubUserDetailsViewController: DetailsRelayProtocol {
 //    func loadProfileAvatar(avatarURL: String) {
 //        avatarImageView.imageryPull(picURL: avatarURL)
 //    }
-}
+// }
 
-//protocol detailsRelayProtocol {
+//protocol DetailsRelayProtocol {
 //    func loadProfileAvatar(imageURL: String)
 //}
+
+//    navigationController?.navigationBar.isHidden = true
+        
+//    DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
+//        self.avatarImageView.imageryPull(picURL: GloballyApplicableClass.mutableAvatarURL)
+//    }
+            
 

@@ -17,9 +17,11 @@ struct UpdatedHubModel: Codable {
 struct UpdatedHubItems: Codable {
     let loginName: String
     let avatarURL: String
+    let userUrl: String
     
     enum CodingKeys: String, CodingKey {
         case loginName = "login"
         case avatarURL = "avatar_url"
+        case userUrl = "url"
     }
 }

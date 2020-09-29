@@ -42,13 +42,19 @@ extension SearchGHubViewController: TableViewDelegateDatasourceCombined {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let sBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.userDetailsViewControllerStoryboardID)
+        guard let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.userDetailsViewControllerStoryboardID) as? GHubUserDetailsViewController else { return }
         
-        guard let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) else { return }  
-        searchScreenDelegate?.loadProfileAvatar(avatarURL: avatarURL)
+        destination.avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row)
+        destination.userURL = ghbViewModel.gettingUserUrl(index: indexPath.row)
         
-        self.searchScreenDelegate = destination as? DetailsRelayProtocol // sus as hike
         navigationController?.crossDissolve(destination)  
     }
 }
-// 
+//
+
+//  /      guard let avatarURL = ghbViewModel.gettingAvatarURL(index: indexPath.row) else { return }
+ //     searchScreenDelegate?.loadProfileAvatar(avatarURL: avatarURL)
+      
+//      self.searchScreenDelegate = destination as? DetailsRelayProtocol // sus as hike
+
+//
