@@ -12,7 +12,7 @@ extension UINavigationController {
     func crossDissolve(_ viewController: UIViewController) {
         
         let cdTransition = CATransition()
-        cdTransition.duration = 0.53
+        cdTransition.duration = 0.73
         cdTransition.type = CATransitionType.fade
         view.layer.add(cdTransition, forKey: nil)
         pushViewController(viewController, animated: false)
