@@ -12,6 +12,7 @@
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
 		8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F32521434F00808524 /* UpdatedHubModel.swift */; };
 		8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */; };
+		8F8FBA662535587A009511E7 /* Mviewcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FBA652535587A009511E7 /* Mviewcon.m */; };
 		8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */; };
 		8FAFB5CB251D2A2E00E8A694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */; };
 		8FAFB5CD251D2A2E00E8A694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CC251D2A2E00E8A694 /* SceneDelegate.swift */; };
@@ -37,6 +38,9 @@
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
 		8F46A4F32521434F00808524 /* UpdatedHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedHubModel.swift; sourceTree = "<group>"; };
 		8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHubUserDetailsViewController.swift; sourceTree = "<group>"; };
+		8F8FBA6425355879009511E7 /* HubSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HubSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F8FBA652535587A009511E7 /* Mviewcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mviewcon.m; sourceTree = "<group>"; };
+		8F8FBA6725355890009511E7 /* Hviewcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hviewcon.h; sourceTree = "<group>"; };
 		8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarSettings.swift; sourceTree = "<group>"; };
 		8FAFB5C7251D2A2E00E8A694 /* HubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F8FBA632535582C009511E7 /* Bridged */ = {
+			isa = PBXGroup;
+			children = (
+				8F8FBA652535587A009511E7 /* Mviewcon.m */,
+				8F8FBA6725355890009511E7 /* Hviewcon.h */,
+				8F8FBA6425355879009511E7 /* HubSearch-Bridging-Header.h */,
+			);
+			path = Bridged;
+			sourceTree = "<group>";
+		};
 		8FAFB5BE251D2A2E00E8A694 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,7 @@
 			children = (
 				8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */,
 				8FAFB5CC251D2A2E00E8A694 /* SceneDelegate.swift */,
+				8F8FBA632535582C009511E7 /* Bridged */,
 				8FAFB5F2251D328C00E8A694 /* Networkings */,
 				8FAFB5E5251D2C3400E8A694 /* Models */,
 				8FAFB5E3251D2C0700E8A694 /* ViewControllers */,
@@ -187,6 +202,7 @@
 				TargetAttributes = {
 					8FAFB5C6251D2A2E00E8A694 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -235,6 +251,7 @@
 				8FAFB5F6251D335D00E8A694 /* ImageryNormalPull.swift in Sources */,
 				8FAFB5DF251D2B5E00E8A694 /* SearchGHubViewController.swift in Sources */,
 				8FAFB5E7251D2C4F00E8A694 /* GloballyApplied.swift in Sources */,
+				8F8FBA662535587A009511E7 /* Mviewcon.m in Sources */,
 				8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */,
 				8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */,
 				8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */,
@@ -388,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQGTQT3UZ8;
 				INFOPLIST_FILE = HubSearch/Info.plist;
@@ -397,6 +415,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JerExplosion.HubSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HubSearch/Bridged/HubSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQGTQT3UZ8;
 				INFOPLIST_FILE = HubSearch/Info.plist;
@@ -415,6 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JerExplosion.HubSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HubSearch/Bridged/HubSearch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
