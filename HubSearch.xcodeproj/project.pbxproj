@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53C0985471CE993BC10E6682 /* Pods_HubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54343424A4EFA6EE0CAF7FF /* Pods_HubSearch.framework */; };
 		8F01A2AF2522C22F00A735CA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01A2AE2522C22F00A735CA /* UserModel.swift */; };
 		8F01A2B12522C96600A735CA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01A2B02522C96600A735CA /* UserViewModel.swift */; };
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EE44CD30C1941D0726E4A11 /* Pods-HubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubSearch.release.xcconfig"; path = "Target Support Files/Pods-HubSearch/Pods-HubSearch.release.xcconfig"; sourceTree = "<group>"; };
 		8F01A2AE2522C22F00A735CA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8F01A2B02522C96600A735CA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		8FAFB5F3251D32B000E8A694 /* ImageryCacheTechnique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageryCacheTechnique.swift; sourceTree = "<group>"; };
 		8FAFB5F5251D335D00E8A694 /* ImageryNormalPull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageryNormalPull.swift; sourceTree = "<group>"; };
 		8FAFB5F7251D35BB00E8A694 /* APIDealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDealer.swift; sourceTree = "<group>"; };
+		A54343424A4EFA6EE0CAF7FF /* Pods_HubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B291C6F78CCE08E12E0A4004 /* Pods-HubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubSearch.debug.xcconfig"; path = "Target Support Files/Pods-HubSearch/Pods-HubSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C0985471CE993BC10E6682 /* Pods_HubSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462DA71C97530A41B6F938C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A54343424A4EFA6EE0CAF7FF /* Pods_HubSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F8FBA632535582C009511E7 /* Bridged */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 			children = (
 				8FAFB5C9251D2A2E00E8A694 /* HubSearch */,
 				8FAFB5C8251D2A2E00E8A694 /* Products */,
+				9A59FD45E59B6F56319A95E1 /* Pods */,
+				462DA71C97530A41B6F938C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +180,16 @@
 			path = Networkings;
 			sourceTree = "<group>";
 		};
+		9A59FD45E59B6F56319A95E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B291C6F78CCE08E12E0A4004 /* Pods-HubSearch.debug.xcconfig */,
+				2EE44CD30C1941D0726E4A11 /* Pods-HubSearch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FAFB5DB251D2A3200E8A694 /* Build configuration list for PBXNativeTarget "HubSearch" */;
 			buildPhases = (
+				22EA8EB9E6AA23DC133A9755 /* [CP] Check Pods Manifest.lock */,
 				8FAFB5C3251D2A2E00E8A694 /* Sources */,
 				8FAFB5C4251D2A2E00E8A694 /* Frameworks */,
 				8FAFB5C5251D2A2E00E8A694 /* Resources */,
+				24515AEEB4BE6D149EC50659 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +259,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22EA8EB9E6AA23DC133A9755 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HubSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24515AEEB4BE6D149EC50659 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubSearch/Pods-HubSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubSearch/Pods-HubSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HubSearch/Pods-HubSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FAFB5C3251D2A2E00E8A694 /* Sources */ = {
@@ -397,6 +466,7 @@
 		};
 		8FAFB5DC251D2A3200E8A694 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B291C6F78CCE08E12E0A4004 /* Pods-HubSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -418,6 +488,7 @@
 		};
 		8FAFB5DD251D2A3200E8A694 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE44CD30C1941D0726E4A11 /* Pods-HubSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
