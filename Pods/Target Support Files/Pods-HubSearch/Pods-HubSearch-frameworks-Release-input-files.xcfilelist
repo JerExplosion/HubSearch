@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-HubSearch/Pods-HubSearch-frameworks.sh
-${BUILT_PRODUCTS_DIR}/TrustKit/TrustKit.framework
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
