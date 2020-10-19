@@ -7,6 +7,6 @@ target 'HubSearch' do
 
   # Pods for HubSearch 
 
-   pod 'TrustKit'
+ #  pod 'TrustKit'
 
 end
