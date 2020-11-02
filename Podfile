@@ -9,6 +9,8 @@ target 'HubSearch' do
 
  #  pod 'TrustKit'
      
-    pod 'AFNetworking', '~> 4.0'
+  #  pod 'AFNetworking', '~> 4.0'
+
+
 
 end
