@@ -13,6 +13,8 @@
 		8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DE74A251D4084002CDA60 /* HubModel.swift */; };
 		8F46A4F42521434F00808524 /* UpdatedHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F32521434F00808524 /* UpdatedHubModel.swift */; };
 		8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */; };
+		8F7AFD5B2554B1F700B33E82 /* ComputedWebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7AFD5A2554B1F700B33E82 /* ComputedWebKitViewController.swift */; };
+		8F7AFD5F2554B3E900B33E82 /* GitButtoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7AFD5E2554B3E900B33E82 /* GitButtoExtension.swift */; };
 		8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */; };
 		8FAFB5CB251D2A2E00E8A694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CA251D2A2E00E8A694 /* AppDelegate.swift */; };
 		8FAFB5CD251D2A2E00E8A694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB5CC251D2A2E00E8A694 /* SceneDelegate.swift */; };
@@ -39,6 +41,8 @@
 		8F1DE74A251D4084002CDA60 /* HubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubModel.swift; sourceTree = "<group>"; };
 		8F46A4F32521434F00808524 /* UpdatedHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedHubModel.swift; sourceTree = "<group>"; };
 		8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHubUserDetailsViewController.swift; sourceTree = "<group>"; };
+		8F7AFD5A2554B1F700B33E82 /* ComputedWebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedWebKitViewController.swift; sourceTree = "<group>"; };
+		8F7AFD5E2554B3E900B33E82 /* GitButtoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitButtoExtension.swift; sourceTree = "<group>"; };
 		8F8FBA6425355879009511E7 /* HubSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HubSearch-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F9059CD251E7E5D0078BA2A /* SearchBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarSettings.swift; sourceTree = "<group>"; };
 		8FAFB5C7251D2A2E00E8A694 /* HubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				8FAFB5DE251D2B5E00E8A694 /* SearchGHubViewController.swift */,
+				8F7AFD5E2554B3E900B33E82 /* GitButtoExtension.swift */,
 				8F46A4F5252193DE00808524 /* GHubUserDetailsViewController.swift */,
+				8F7AFD5A2554B1F700B33E82 /* ComputedWebKitViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,7 +192,6 @@
 				B291C6F78CCE08E12E0A4004 /* Pods-HubSearch.debug.xcconfig */,
 				2EE44CD30C1941D0726E4A11 /* Pods-HubSearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,8 +299,10 @@
 				8F1DE74B251D4085002CDA60 /* HubModel.swift in Sources */,
 				8FAFB5E1251D2BF400E8A694 /* GHubViewModel.swift in Sources */,
 				8FAFB5CB251D2A2E00E8A694 /* AppDelegate.swift in Sources */,
+				8F7AFD5F2554B3E900B33E82 /* GitButtoExtension.swift in Sources */,
 				8FAFB5F6251D335D00E8A694 /* ImageryNormalPull.swift in Sources */,
 				8FAFB5DF251D2B5E00E8A694 /* SearchGHubViewController.swift in Sources */,
+				8F7AFD5B2554B1F700B33E82 /* ComputedWebKitViewController.swift in Sources */,
 				8FAFB5E7251D2C4F00E8A694 /* GloballyApplied.swift in Sources */,
 				8F46A4F6252193DE00808524 /* GHubUserDetailsViewController.swift in Sources */,
 				8F9059CE251E7E5D0078BA2A /* SearchBarSettings.swift in Sources */,

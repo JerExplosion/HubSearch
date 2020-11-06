@@ -8,6 +8,7 @@
 
 import UIKit
 
+// @available(iOS 14.0, *)
 class SearchGHubViewController: UIViewController, UISearchResultsUpdating {
     
     var searchScreenDelegate: DetailsRelayProtocol?
@@ -17,12 +18,23 @@ class SearchGHubViewController: UIViewController, UISearchResultsUpdating {
     @IBOutlet weak var gHubSearchBar: UISearchBar!
     @IBOutlet weak var gHubUsersDisplayTable: UITableView!
     
+    let gitButto: UIButton = {
+        let butto = UIButton.init()
+        butto.setTitle("Press Here", for: .normal)
+        butto.setTitleColor(.black, for: .normal)
+        butto.layer.cornerRadius = 10
+        butto.backgroundColor = .white  // .lightGray
+        butto.titleLabel?.font = UIFont(name: "Georgia", size: 17)
+        return butto
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gHubUsersDisplayTable.isHidden = true
         tableViewSetUp()
         viewModelConfiguration()
         gHubSearchBar.delegate = self
+        gitButtoSetup()
     }
     
     func tableViewSetUp() {
@@ -54,13 +66,13 @@ extension SearchGHubViewController {
     func updateSearchResults(for searchController: UISearchController) {
         
         if let searchCriteria = searchController.searchBar.text, searchCriteria.count > 0 {
-//            smViewModel.filteredFriendsData = smViewModel.friendsData.filter {
-//                $0.name.contains(searchCriteria) ||
-//                $0.address.contains(searchCriteria) ||
-//                $0.company.contains(searchCriteria)
-//            }
+            //            smViewModel.filteredFriendsData = smViewModel.friendsData.filter {
+            //                $0.name.contains(searchCriteria) ||
+            //                $0.address.contains(searchCriteria) ||
+            //                $0.company.contains(searchCriteria)
+            //            }
         } else {
-          //  smViewModel.filteredFriendsData = smViewModel.friendsData
+            //  smViewModel.filteredFriendsData = smViewModel.friendsData
         }
         gHubUsersDisplayTable.reloadData()
     }
