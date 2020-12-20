@@ -11,9 +11,6 @@ target 'HubSearch' do
      
   #  pod 'AFNetworking', '~> 4.0'
 
-	 
-    pod 'Crashlytics'
-
 
 
 end
