@@ -6,150 +6,44 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		ABB048B191245233986A7CD75FE412A5 /* Fabric */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 13B185864087F75D556AC109B2D70BF7 /* Build configuration list for PBXAggregateTarget "Fabric" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = Fabric;
-		};
-		C0E41540D6862472ED7F2FA11669BE1F /* Crashlytics */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A084C0089544D8EEE7DA4C6D8EEEF9ED /* Build configuration list for PBXAggregateTarget "Crashlytics" */;
-			buildPhases = (
-			);
-			dependencies = (
-				C9CEFEFAAAEDB8CD947737FA56C849D4 /* PBXTargetDependency */,
-			);
-			name = Crashlytics;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		3E513B07718042D42194358A4EE98B7F /* Pods-HubSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E66B9C954541F3CBA0A421E1B58379 /* Pods-HubSearch-dummy.m */; };
-		A36A93E85090A0DCC25FE1B92DE20665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BBBDCC6AFB07B89FD8A19A80F2A1229D /* Pods-HubSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6D4CAAB78FCD172D22C25E4345D1FB /* Pods-HubSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ACE811A12625AAC89080115D2270434 /* Pods-HubSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6D4CAAB78FCD172D22C25E4345D1FB /* Pods-HubSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE2B0922097260ED5606F609647BE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D16B8EB589A6FFFC1528D07D1830243E /* Pods-HubSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E66B9C954541F3CBA0A421E1B58379 /* Pods-HubSearch-dummy.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6447CA1A72B226F8DC6DE66FD7966C66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABB048B191245233986A7CD75FE412A5;
-			remoteInfo = Fabric;
-		};
-		BC9AF0EF4160A5C6C2CE02464C0C71E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0E41540D6862472ED7F2FA11669BE1F;
-			remoteInfo = Crashlytics;
-		};
-		D465047540D12FD9D95291AE82A76DB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABB048B191245233986A7CD75FE412A5;
-			remoteInfo = Fabric;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E66B9C954541F3CBA0A421E1B58379 /* Pods-HubSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HubSearch-dummy.m"; sourceTree = "<group>"; };
-		063CFCF6AB8BD21E0AE7437BCD6512DA /* Crashlytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Crashlytics.debug.xcconfig; sourceTree = "<group>"; };
 		0FC489C803529BAACA83519BD87BA63D /* Pods-HubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HubSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		1D6D4CAAB78FCD172D22C25E4345D1FB /* Pods-HubSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HubSearch-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		39167DDE65FFACA9D2D5E6F21B1AF397 /* Pods-HubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HubSearch.release.xcconfig"; sourceTree = "<group>"; };
-		44F3BD5BF0EC5A6AF1F9CD4E2043A84E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		4503298F6F52EB3FF32971FF421C6C80 /* Pods-HubSearch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HubSearch-acknowledgements.plist"; sourceTree = "<group>"; };
 		47606DCDF9C62EBB55FF10E349108982 /* Pods-HubSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HubSearch-Info.plist"; sourceTree = "<group>"; };
-		5F07B6772747F66B74E05DFA8500738D /* Crashlytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Crashlytics.release.xcconfig; sourceTree = "<group>"; };
-		65FE5D82000439AE178C1341DDB7CCFC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		6D24B1F4FF348B13A2A6CF52226C7E08 /* Pods_HubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HubSearch.framework; path = "Pods-HubSearch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FC80C1435EE425387B56EFE6067360 /* Pods-HubSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HubSearch.modulemap"; sourceTree = "<group>"; };
-		80BEEB32DF41BDE8C4FE186C7141F117 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		80D172859BB203572C08C2DFE410B53B /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
-		8B1F324E8CA1A6FBDA3EC56E9AEBAC51 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
-		986D45E5FC5876D22DB404B85A119841 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B3827110D4A4E85B7F95BF1ECA8CB292 /* Fabric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fabric.release.xcconfig; sourceTree = "<group>"; };
-		B670544DCF4E4EC3F84F37F3B8A983E9 /* Fabric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fabric.debug.xcconfig; sourceTree = "<group>"; };
-		BE92DF3CE7B770037F3AC3CFE07D0908 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		CCF280960BDA71437122D312D98F6440 /* Pods-HubSearch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HubSearch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB821687217E5F48026F7884953D6116 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		F11D013EC94ED28B95E82A7965E484FE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		F9CD45E202039ED5CFFCA0D132820EB1 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		FF4D517D1F025EB4405C4123EA326868 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEF25E53DC48ACF703D0888E656416F4 /* Frameworks */ = {
+		580092891456EF26C43E51CA12E3FA11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36A93E85090A0DCC25FE1B92DE20665 /* Foundation.framework in Frameworks */,
+				1BE2B0922097260ED5606F609647BE02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D6D2169B9F710D43D223E79BDCBCCD1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B670544DCF4E4EC3F84F37F3B8A983E9 /* Fabric.debug.xcconfig */,
-				B3827110D4A4E85B7F95BF1ECA8CB292 /* Fabric.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Fabric";
-			sourceTree = "<group>";
-		};
 		24195237CA418E08B6103D159D5CEBA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				6D24B1F4FF348B13A2A6CF52226C7E08 /* Pods_HubSearch.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		258E554DC5D2B6211CDB251058727907 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F11D013EC94ED28B95E82A7965E484FE /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		259E92796290045DE37164DC3D3B83F8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				063CFCF6AB8BD21E0AE7437BCD6512DA /* Crashlytics.debug.xcconfig */,
-				5F07B6772747F66B74E05DFA8500738D /* Crashlytics.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Crashlytics";
-			sourceTree = "<group>";
-		};
-		40B507A3A49DB0A2F3DE2E51D5E03C19 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				44F3BD5BF0EC5A6AF1F9CD4E2043A84E /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D6A2EF714EDCBB29091A94D88D6B7E4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F1BF83DDC852AC0DF3F6E1C9544A959C /* Crashlytics */,
-				9FB2006EA8EC2CA58B08C0BC7C6A45F1 /* Fabric */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		80BDA308BE89DEBF7263232603637A80 /* Pods-HubSearch */ = {
@@ -166,18 +60,6 @@
 			);
 			name = "Pods-HubSearch";
 			path = "Target Support Files/Pods-HubSearch";
-			sourceTree = "<group>";
-		};
-		9FB2006EA8EC2CA58B08C0BC7C6A45F1 /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				EB821687217E5F48026F7884953D6116 /* FABAttributes.h */,
-				986D45E5FC5876D22DB404B85A119841 /* Fabric.h */,
-				40B507A3A49DB0A2F3DE2E51D5E03C19 /* Frameworks */,
-				0D6D2169B9F710D43D223E79BDCBCCD1 /* Support Files */,
-			);
-			name = Fabric;
-			path = Fabric;
 			sourceTree = "<group>";
 		};
 		B6E49A51F60D50689F45EA0711E12AD9 /* Targets Support Files */ = {
@@ -201,7 +83,6 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4D6A2EF714EDCBB29091A94D88D6B7E4 /* Pods */,
 				24195237CA418E08B6103D159D5CEBA0 /* Products */,
 				B6E49A51F60D50689F45EA0711E12AD9 /* Targets Support Files */,
 			);
@@ -215,31 +96,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1BF83DDC852AC0DF3F6E1C9544A959C /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				BE92DF3CE7B770037F3AC3CFE07D0908 /* ANSCompatibility.h */,
-				8B1F324E8CA1A6FBDA3EC56E9AEBAC51 /* Answers.h */,
-				80D172859BB203572C08C2DFE410B53B /* CLSAttributes.h */,
-				FF4D517D1F025EB4405C4123EA326868 /* CLSLogging.h */,
-				80BEEB32DF41BDE8C4FE186C7141F117 /* CLSReport.h */,
-				F9CD45E202039ED5CFFCA0D132820EB1 /* CLSStackFrame.h */,
-				65FE5D82000439AE178C1341DDB7CCFC /* Crashlytics.h */,
-				258E554DC5D2B6211CDB251058727907 /* Frameworks */,
-				259E92796290045DE37164DC3D3B83F8 /* Support Files */,
-			);
-			name = Crashlytics;
-			path = Crashlytics;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E3B3D05C123DD340AA5595F1C72BA77 /* Headers */ = {
+		B72697F6C95DE26657F1AC77F5DCE7A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBDCC6AFB07B89FD8A19A80F2A1229D /* Pods-HubSearch-umbrella.h in Headers */,
+				0ACE811A12625AAC89080115D2270434 /* Pods-HubSearch-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,18 +112,16 @@
 /* Begin PBXNativeTarget section */
 		F9A6C477C4FAF4D1C4490860FF9A6B70 /* Pods-HubSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A16C589A226907A5D6781E0642915167 /* Build configuration list for PBXNativeTarget "Pods-HubSearch" */;
+			buildConfigurationList = 5C82EEC32A8A052EBE8A7A540B75CDD1 /* Build configuration list for PBXNativeTarget "Pods-HubSearch" */;
 			buildPhases = (
-				3E3B3D05C123DD340AA5595F1C72BA77 /* Headers */,
-				F07E8AE7F9A6B2D77CB93E10DB829E03 /* Sources */,
-				AEF25E53DC48ACF703D0888E656416F4 /* Frameworks */,
-				EAD2C4F9D79126B9652A90B4C2F27097 /* Resources */,
+				B72697F6C95DE26657F1AC77F5DCE7A1 /* Headers */,
+				D52C5DB12EEA246577265672D1A2C2C7 /* Sources */,
+				580092891456EF26C43E51CA12E3FA11 /* Frameworks */,
+				64D0B0698F5A5F091ECF0D8CF279D5BD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B425ED29957C5DC8B522A87E55E21DBD /* PBXTargetDependency */,
-				E8FC06ADB1A73F07405572297B159085 /* PBXTargetDependency */,
 			);
 			name = "Pods-HubSearch";
 			productName = "Pods-HubSearch";
@@ -288,15 +150,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0E41540D6862472ED7F2FA11669BE1F /* Crashlytics */,
-				ABB048B191245233986A7CD75FE412A5 /* Fabric */,
 				F9A6C477C4FAF4D1C4490860FF9A6B70 /* Pods-HubSearch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EAD2C4F9D79126B9652A90B4C2F27097 /* Resources */ = {
+		64D0B0698F5A5F091ECF0D8CF279D5BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,94 +166,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F07E8AE7F9A6B2D77CB93E10DB829E03 /* Sources */ = {
+		D52C5DB12EEA246577265672D1A2C2C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E513B07718042D42194358A4EE98B7F /* Pods-HubSearch-dummy.m in Sources */,
+				D16B8EB589A6FFFC1528D07D1830243E /* Pods-HubSearch-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		B425ED29957C5DC8B522A87E55E21DBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Crashlytics;
-			target = C0E41540D6862472ED7F2FA11669BE1F /* Crashlytics */;
-			targetProxy = BC9AF0EF4160A5C6C2CE02464C0C71E0 /* PBXContainerItemProxy */;
-		};
-		C9CEFEFAAAEDB8CD947737FA56C849D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Fabric;
-			target = ABB048B191245233986A7CD75FE412A5 /* Fabric */;
-			targetProxy = D465047540D12FD9D95291AE82A76DB9 /* PBXContainerItemProxy */;
-		};
-		E8FC06ADB1A73F07405572297B159085 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Fabric;
-			target = ABB048B191245233986A7CD75FE412A5 /* Fabric */;
-			targetProxy = 6447CA1A72B226F8DC6DE66FD7966C66 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		5ADE7B0CAFAC00239A52ADA8FBB1D403 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F07B6772747F66B74E05DFA8500738D /* Crashlytics.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5EE802E9E199B74F79E0DEFE4F989656 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39167DDE65FFACA9D2D5E6F21B1AF397 /* Pods-HubSearch.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HubSearch/Pods-HubSearch-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HubSearch/Pods-HubSearch.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		61FC5749665EDDB2D90E737333B3BA8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -458,56 +241,7 @@
 			};
 			name = Debug;
 		};
-		927603C72175524D52959C0F06EBDCD1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B670544DCF4E4EC3F84F37F3B8A983E9 /* Fabric.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		971FB51D9909ECEE6CD3DBFAD0AB0BF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063CFCF6AB8BD21E0AE7437BCD6512DA /* Crashlytics.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B3B658D0166174C9A2BACC6E0B1B3FFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3827110D4A4E85B7F95BF1ECA8CB292 /* Fabric.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EFFA3439FC27117097567AB6AEC7D7F1 /* Debug */ = {
+		B1A3BC039F79A9679F6105FB13BE61BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FC489C803529BAACA83519BD87BA63D /* Pods-HubSearch.debug.xcconfig */;
 			buildSettings = {
@@ -544,6 +278,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		DB56568BAC1B1BB4FC5729F6C42F96FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39167DDE65FFACA9D2D5E6F21B1AF397 /* Pods-HubSearch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HubSearch/Pods-HubSearch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HubSearch/Pods-HubSearch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F671B4D3AA8F2CA18D12CD74BD1CDEF9 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -608,15 +381,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B185864087F75D556AC109B2D70BF7 /* Build configuration list for PBXAggregateTarget "Fabric" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				927603C72175524D52959C0F06EBDCD1 /* Debug */,
-				B3B658D0166174C9A2BACC6E0B1B3FFE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -626,20 +390,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A084C0089544D8EEE7DA4C6D8EEEF9ED /* Build configuration list for PBXAggregateTarget "Crashlytics" */ = {
+		5C82EEC32A8A052EBE8A7A540B75CDD1 /* Build configuration list for PBXNativeTarget "Pods-HubSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				971FB51D9909ECEE6CD3DBFAD0AB0BF4 /* Debug */,
-				5ADE7B0CAFAC00239A52ADA8FBB1D403 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A16C589A226907A5D6781E0642915167 /* Build configuration list for PBXNativeTarget "Pods-HubSearch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFFA3439FC27117097567AB6AEC7D7F1 /* Debug */,
-				5EE802E9E199B74F79E0DEFE4F989656 /* Release */,
+				B1A3BC039F79A9679F6105FB13BE61BE /* Debug */,
+				DB56568BAC1B1BB4FC5729F6C42F96FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
